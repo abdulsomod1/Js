@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>
-      <div class="border" @keyframes example>Rock, Paper, or Scissors?</div>
-    </h1>
-    <p>
-      A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats
-      <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and
-      <strong>paper</strong> beats <strong>rock</strong>.
-    </p>
 
-    <div class="scoreboard ani">
-      <h2>Scoreboard</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td id="humanScore">0</td>
-            <td id="computerScore">0</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>human</th>
-            <th>computer</th>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <h2>Study well</h2>
-    <div class="flex">
-      <button id="rock">
-        <img src="Rock.png" alt="Rock" srcset="Rock.png" class="rock" />
-        <p>Rock</p>
-      </button>
+<body>
+  <h1>
+    <div class="border" @keyframes example>Rock, Paper, or Scissors?</div>
+  </h1>
+  <p>
+    A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats
+    <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and
+    <strong>paper</strong> beats <strong>rock</strong>.
+  </p>
 
-      <button id="paper">
-        <img src="Paper.png" alt="Rock" srcset="paper.png" class="Paper" />
-        <p>Rock</p>
-      </button>
+  <div class="scoreboard ani">
+    <h2>Scoreboard</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td id="humanScore">0</td>
+          <td id="computerScore">0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>human</th>
+          <th>computer</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 
-      <button id="scissors">
-        <img src="Scissor.png" alt="Rock" srcset="scissor.png" class="scissor" />
-        <p>Rock</p>
-      </button>
-    </div>
+  <h2>Study well</h2>
+  <div class="flex">
+    <button id="rock">
+      <img src="Rock.png" alt="Rock" srcset="Rock.png" class="rock" />
+      <p>Rock</p>
+    </button>
 
-    <div id="status"></div>
-    <script src="js/index.js"></script>
-  </body>
+    <button id="paper">
+      <img src="Paper.png" alt="Rock" srcset="paper.png" class="Paper" />
+      <p>Rock</p>
+    </button>
+
+    <button id="scissors">
+      <img src="Scissor.png" alt="Rock" srcset="scissor.png" class="scissor" />
+      <p>Rock</p>
+    </button>
+  </div>
+
+  <div id="status"></div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
