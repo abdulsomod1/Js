@@ -1,0 +1,98 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background: blue;
+    color: white;
+    margin: 3em;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .rock {
+    width: 30%;
+    margin-top: 2%;
+  }
+  
+  .Paper {
+    width: 30%;
+    margin-top: 2%;
+  }
+  .scissor {
+    width: 40%;
+    margin-top: 2%;
+  }
+  
+  strong {
+    text-decoration: underline;
+  }
+  
+  .border {
+    background-color: white;
+    width: 50%;
+    color: blue;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    animation-name: example;
+    animation: 4s linear 0s infinite alternate example;
+  }
+
+  @keyframes example {
+    0%   {background-color: red;}
+    100% {background-color: green;}
+  }
+
+  .ani {
+    background-color: yellow;
+    height: 100%;
+    animation: 4s linear 0s infinite alternate example;
+    transform: translateY(0)
+    }
+
+    @keyframes example {
+      0%   {background-color: red;}
+      100% {background-color: green;}
+    }
+
+   button {
+    background: white;
+    color: black;
+    border: none;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0;
+  }
+  button:active {
+    background: blue;
+  }
+  
+  .scoreboard {
+    width: 14em;
+    margin: auto;
+    border: 1px solid lime;
+  }
+  .scoreboard h2 {
+    border-bottom: 1px solid lime;
+    margin: 0;
+    padding: 10px;
+  }
+  .scoreboard table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .scoreboard th, .scoreboard td {
+    text-align: center;
+  }
+  .scoreboard td {
+    font-size: 3em;
+    padding: 0 20px;
+  }
+  
+  #status {
+    margin-top: 20px;
+  }
