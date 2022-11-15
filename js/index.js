@@ -1,5 +1,5 @@
-var humanScore = 0;
-var computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 document.getElementById('rock').onclick = playRock;
 document.getElementById('paper').onclick = playPaper;
@@ -18,12 +18,9 @@ function playScissors() {
 function play(humanPlay) {
   computerPlay = getComputerPlay();
 
-  document.getElementById('status').innerHTML =
-    '<p>You played <strong>' +
-    humanPlay +
-    '</strong>. The bot played <strong>' +
-    computerPlay +
-    '</strong>.</p>';
+  document.getElementById(
+    'status',
+  ).innerHTML = `<p>You played <strong>${humanPlay}</strong>. The bot played <strong>${computerPlay}</strong>.</p>`;
 
   if (humanPlay == 'rock') {
     if (computerPlay == 'rock') {
@@ -62,7 +59,7 @@ function play(humanPlay) {
 }
 
 function getComputerPlay() {
-  var plays = ['rock', 'paper', 'scissors'];
-  var play = plays[Math.floor(Math.random() * plays.length)];
+  const plays = ['rock', 'paper', 'scissors'];
+  const play = plays[Math.floor(Math.random() * plays.length)];
   return play;
 }

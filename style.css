@@ -16,7 +16,7 @@ body {
   margin-top: 2%;
 }
 
-.Paper {
+.paper {
   width: 30%;
   margin-top: 2%;
 }
@@ -32,12 +32,10 @@ strong {
 
 .border {
   background-color: white;
-  width: 50%;
   color: blue;
   margin: auto;
   width: 50%;
   padding: 10px;
-  animation-name: example;
   animation: 4s linear 0s infinite alternate example;
 }
 
@@ -55,7 +53,7 @@ strong {
   background-color: yellow;
   height: 100%;
   animation: 4s linear 0s infinite alternate example;
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 @keyframes example {
