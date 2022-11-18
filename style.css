@@ -31,7 +31,6 @@ strong {
 }
 
 .border {
-  background-color: white;
   color: blue;
   margin: auto;
   width: 50%;
@@ -106,8 +105,4 @@ button:active {
 .scoreboard td {
   font-size: 3em;
   padding: 0 20px;
-}
-
-#status {
-  margin-top: 20px;
 }
